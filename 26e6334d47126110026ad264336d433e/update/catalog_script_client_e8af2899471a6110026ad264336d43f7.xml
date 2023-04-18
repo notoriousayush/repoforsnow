@@ -5,7 +5,7 @@
         <applies_extended>false</applies_extended>
         <applies_req_item>false</applies_req_item>
         <applies_sc_task>false</applies_sc_task>
-        <applies_target_record>false</applies_target_record>
+        <applies_target_record>true</applies_target_record>
         <applies_to>item</applies_to>
         <cat_item display_value="incidentgithub">74eee459471a6110026ad264336d439e</cat_item>
         <cat_variable/>
@@ -21,7 +21,9 @@
    //Type appropriate comment here, and begin script below
 	var pattern=/^[a-zA-Z]+$/;
    if(pattern.test(g_form.getValue("name"))){return true;}
-	else{return false;}
+	else{return false;
+		g_form.addErrorMessage("not a string")
+		}
 }]]></script>
         <sys_class_name>catalog_script_client</sys_class_name>
         <sys_created_by>admin</sys_created_by>
@@ -29,7 +31,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>e8af2899471a6110026ad264336d43f7</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>check if string name and add</sys_name>
         <sys_overrides/>
         <sys_package display_value="ayushgithub" source="26e6334d47126110026ad264336d433e">26e6334d47126110026ad264336d433e</sys_package>
@@ -37,7 +39,7 @@
         <sys_scope display_value="ayushgithub">26e6334d47126110026ad264336d433e</sys_scope>
         <sys_update_name>catalog_script_client_e8af2899471a6110026ad264336d43f7</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-04-18 09:16:22</sys_updated_on>
+        <sys_updated_on>2023-04-18 09:20:22</sys_updated_on>
         <table/>
         <type>onSubmit</type>
         <ui_type>0</ui_type>
